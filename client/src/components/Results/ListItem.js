@@ -8,5 +8,6 @@ export const ListItem = props => (
     <Link to={"./details"}>
       <button variant="raised">More Info</button>
     </Link>
+    <hr />
   </div>
 );

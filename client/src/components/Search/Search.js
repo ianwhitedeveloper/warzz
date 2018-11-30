@@ -1,19 +1,20 @@
 import React from "react";
 import "./Search.css";
-import API from "../../utils/API";
+// import API from "../../utils/API";
 
 class Search extends React.Component {
-  state = {
-    results: [],
-    resultSearch: ""
-  };
-  handleSubmit(event) {
-    event.preventDefault();
-    console.log("submitted");
-    API.getResults("Boba Fett").then(res =>
-      this.setState({ results: res.data })
-    );
-  }
+  // state = {
+  //   results: [],
+  //   resultSearch: ""
+  // };
+  // handleSubmit = event => {
+  //   event.preventDefault();
+  //   console.log("submitted");
+  //   API.getResults("Boba Fett").then(res =>
+  //     // this.setState({ results: res.data })
+  //     console.log(res.data)
+  //   );
+  // };
 
   render() {
     return (
@@ -44,7 +45,7 @@ class Search extends React.Component {
                 name="search"
                 id="search"
                 value="Search"
-                onClick={this.handleSubmit}
+                onClick={this.props.handleSubmit}
               />
             </li>
           </ul>
