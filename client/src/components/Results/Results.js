@@ -1,15 +1,11 @@
 import React from "react";
 import "./Results.css";
+// import { Link } from "react-router-dom";
 
-class Results extends React.Component{
-    render(){
-        return(
-            <div className="results">
-                <h2>Results</h2>
-                <hr></hr>
-            </div>
-        )
-    }
-}
-
-export default Results;
+export const Results = props => (
+  <div className="results">
+    <h2>Results</h2>
+    <hr />
+    <ul className="list-group">{props.children}</ul>
+  </div>
+);
