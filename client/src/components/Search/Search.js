@@ -7,7 +7,7 @@ class Search extends React.Component {
     results: [],
     resultSearch: ""
   };
-  handleSubmit(event) {
+  handleSubmit = (event) => {
     event.preventDefault();
     console.log("submitted");
     API.getResults("Boba Fett").then(res =>
