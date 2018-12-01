@@ -7,18 +7,23 @@ import API from "../../utils/API";
 class Main extends React.Component {
   state = {
     results: [],
-    resultSearch: ""
+    resultSearch: "",
+    searchQuery: ""
+  };
+  handleSelect = event => {
+    // this.setState({
+    //   searchQuery: event.target.value
+    // });
+    console.log(event.target.value);
   };
 
   handleInputChange = event => {
-    const { name, value } = event.target;
     this.setState({
-      [name]: value
+      resultSearch: event.target.value
     });
   };
   handleSubmit = event => {
     event.preventDefault();
-    console.log("submitted");
     API.getResults(this.state.resultSearch).then(res =>
       this.setState({ results: res.data })
     );
@@ -29,12 +34,11 @@ class Main extends React.Component {
         <Search
           handleSubmit={this.handleSubmit}
           handleChange={this.handleInputChange}
+          handleSelect={this.handleSelect}
         />
         <Results>
           {this.state.results.map(result => {
-            return (
-              <ListItem key={result.name} name={this.state.resultSearch} />
-            );
+            return <ListItem key={result.name} name={result.name} />;
           })}
         </Results>
       </div>

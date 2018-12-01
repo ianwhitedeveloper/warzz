@@ -25,5 +25,25 @@ hr {
 }
 
 .list-group {
-  padding-left: 30px;
+  padding: 0px 30px;
+}
+
+.list-item {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#details-btn {
+  width: 134px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #0ab463;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  align-self: center;
 }

@@ -39,4 +39,9 @@ ul {
   color: white;
   margin-top: 20px;
   height: 34px;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
 }

@@ -23,10 +23,13 @@ h3 #title {
 }
 
 #back-btn {
-  width: 132px;
-  height: 18px;
+  width: 187px;
+  height: 34px;
+  border-radius: 17px;
+  background-color: #0ab463;
   font-family: Montserrat;
   font-size: 14px;
   font-weight: bold;
   color: #ffffff;
+  text-transform: uppercase;
 }

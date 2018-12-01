@@ -23,11 +23,23 @@ class Search extends React.Component {
         <form>
           <ul className="flex">
             <li>
-              <input type="radio" id="people" name="people" />
+              <input
+                type="radio"
+                id="people"
+                name="searchQuery"
+                value="people"
+                onChange={this.props.handleSelect}
+              />
               <label htmlFor="people">People</label>
             </li>
             <li>
-              <input type="radio" id="movies" name="movies" />
+              <input
+                type="radio"
+                id="movies"
+                name="searchQuery"
+                value="films"
+                onChange={this.props.handleSelect}
+              />
               <label htmlFor="movies">Movies</label>
             </li>
             <li>
@@ -35,6 +47,7 @@ class Search extends React.Component {
                 type="text"
                 name="input"
                 id="input"
+                value={this.resultSearch}
                 onChange={this.props.handleChange}
                 placeholder="e.g. Chewbacca, Yoda, Boba Fett"
               />
