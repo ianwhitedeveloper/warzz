@@ -28,7 +28,9 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <header className="header" />
+        <header className="header">
+          <h2>SWStarter</h2>
+        </header>
         <div className="container">
           <Switch>
             <Route exact path="/" component={Main} />

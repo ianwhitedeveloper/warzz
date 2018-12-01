@@ -23,6 +23,11 @@ class Details extends React.Component {
           <div className="movies">
             <h4>Movies</h4>
             <hr />
+            <ul>
+              <li>
+                <a href="#">Return of the Jedi</a>
+              </li>
+            </ul>
           </div>
         </div>
         <Link to={"./"}>

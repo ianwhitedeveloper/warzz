@@ -22,6 +22,16 @@ h6 {
   align-items: center;
 }
 
+.radio-btns {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.radio-btns li {
+  padding-right: 30px;
+}
+
 ul {
   padding: 0px;
 }

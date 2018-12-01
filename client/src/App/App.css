@@ -1,5 +1,24 @@
+.header {
+  height: 50px;
+  box-shadow: 0 2px 0 0 var(--white);
+  background-color: #ffffff;
+  display: flex;
+  align-content: center;
+}
+
 .container {
   width: 900px;
   margin: auto;
-  margin-top: 80px;
+  margin-top: 30px;
+}
+
+.header h2 {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  color: #0ab463;
+  margin: 0px auto;
+  padding-top: 14px;
+  text-align: center;
 }

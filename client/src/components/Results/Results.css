@@ -17,11 +17,17 @@ h2 {
   padding-left: 30px;
 }
 
-hr {
+.results hr {
   width: 522px;
-  height: 1px;
   background-color: #c4c4c4;
   margin: 0px 30px;
+}
+
+.list-item hr {
+  width: 522px;
+  /* height: 1px; */
+  background-color: #c4c4c4;
+  margin: 0px;
 }
 
 .list-group {

@@ -16,10 +16,18 @@ h3 #title {
   color: #000000;
 }
 
-.details,
-.movies {
+.info {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.info hr {
+  width: 322px;
+}
+
+.info ul {
+  list-style: none;
 }
 
 #back-btn {
@@ -32,4 +40,5 @@ h3 #title {
   font-weight: bold;
   color: #ffffff;
   text-transform: uppercase;
+  margin-top: 150px;
 }
