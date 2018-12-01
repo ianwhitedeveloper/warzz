@@ -6,7 +6,7 @@ class Details extends React.Component {
   render() {
     return (
       <div className="details-wrapper">
-        <h3 id="title">{this.props.name}</h3>
+        <h3 id="title">Boba Fett</h3>
         <div className="info">
           <div className="details">
             <h4>Details</h4>

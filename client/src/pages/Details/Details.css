@@ -5,6 +5,7 @@
   box-shadow: 0 1px 2px 0 rgba(132, 132, 132, 0.75);
   background-color: #ffffff;
   padding: 30px;
+  position: relative;
 }
 
 h3 #title {
@@ -41,4 +42,6 @@ h3 #title {
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 150px;
+  position: absolute;
+  bottom: 38px;
 }

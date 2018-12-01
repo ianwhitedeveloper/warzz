@@ -11,10 +11,27 @@ class Main extends React.Component {
     searchQuery: ""
   };
   handleSelect = event => {
-    // this.setState({
-    //   searchQuery: event.target.value
-    // });
+    this.setState({
+      searchQuery: event.target.value
+    });
     console.log(event.target.value);
+  };
+
+  selectQuery = () => {
+    switch (this.state.searchQuery) {
+      case "people":
+        API.getPeople(this.state.resultSearch).then(res =>
+          this.setState({ results: res.data })
+        );
+        break;
+      case "films":
+        API.getMovies(this.state.resultSearch).then(res =>
+          this.setState({ results: res.data })
+        );
+        break;
+      default:
+        alert("Please select People or Movies!");
+    }
   };
 
   handleInputChange = event => {
@@ -22,12 +39,12 @@ class Main extends React.Component {
       resultSearch: event.target.value
     });
   };
+
   handleSubmit = event => {
     event.preventDefault();
-    API.getResults(this.state.resultSearch).then(res =>
-      this.setState({ results: res.data })
-    );
+    this.selectQuery();
   };
+
   render() {
     return (
       <div className="main-page">

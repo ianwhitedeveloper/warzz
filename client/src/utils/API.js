@@ -1,7 +1,10 @@
 import axios from "axios";
 
 export default {
-  getResults: function(query) {
-    return axios.get("/api/results", { params: { search: query } });
+  getPeople: function(query) {
+    return axios.get("/api/people", { params: { search: query } });
+  },
+  getMovies: function(query) {
+    return axios.get("/api/movies", { params: { search: query } });
   }
 };
